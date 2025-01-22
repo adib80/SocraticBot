@@ -2,6 +2,7 @@ import logging
 import os
 import tempfile
 import shutil
+import langchain_community
 from typing import Optional, Dict, Any
 from dataclasses import dataclass
 from langchain.document_loaders import PyPDFLoader
@@ -29,7 +30,7 @@ class DocumentProcessor:
     def __init__(self):
         self.temp_dir: Optional[str] = None
         self.embeddings = OllamaEmbeddings(model="nomic-embed-text")
-        self.logger = logging.getLogger(__name__)  # Add this line
+        self.logger = logging.getLogger(__name__)  # Added this line
 
     def create_vector_db(self, file_upload) -> Optional[Chroma]:
         """
