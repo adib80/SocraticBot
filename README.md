@@ -18,7 +18,7 @@ This Interactive Learning platform utilises RAG (Retrieval-Augmented Generation)
 
     https://ollama.com/download
 
-2. **Run Llama3.2 for the first time (will take some time):**
+2. **Run Llama3.2:**
 
    cmd - ollama run llama3.2
    Shut down the program after it finishes.
